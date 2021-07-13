@@ -11,24 +11,24 @@ cal = tonumber(io.read())
 
 if (cal >= 1) or (cal <= 4) then
 	if (cal == 1) then
+
 		print(num1 + num2)
-	end
 
-	if (cal == 2) then
+	elseif (cal == 2) then
 		print(num1 - num2)
-	end
 
-	if (cal == 3) then
+	elseif (cal == 3) then
 		print(num1 * num2)
-	end
 
-	if (cal == 4) then
+	elseif (cal == 4) then
 		if (num2 == 0) then
-		print('nao tem como dividir o numero por zero')
+			print('nao tem como dividir o numero por zero')
+		else
+			print(num1 / num2)
+		end
 	else
-		print(num1 / num2)
+		print("sua escolha nao corresponde ao esperado pelo sistema")
 	end
-
 end
 print('aperte entre')
 
